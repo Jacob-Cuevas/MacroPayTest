@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Boton para regresar al activity anterior -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_to_catalog_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back_btn_label" />
+
+    <!-- Contenedor para centrar verticalmente los elementos -->
+    <LinearLayout
+        android:id="@+id/linearlayout_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/back_to_catalog_page">
+
+        <!-- Imagen para mostrar la portada opcional del objeto Movie -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/poster_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <!-- Titulo de Movie -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <!-- Fecha de Estreno de Movie -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Clasificacion de Movie -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Genero de Movie -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/genres"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Descripcion de Movie -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="16dp"
+            android:justificationMode="inter_word"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

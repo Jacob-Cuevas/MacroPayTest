@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <!-- Mensaje de Bienvenida -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcome_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <!-- Listado de objetos Movie -->
+    <ListView
+        android:id="@+id/movie_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_message"
+        android:padding="16dp"
+        android:background="?attr/colorSurface"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        tools:context=".ui.activity.MovieCatalogActivity" />
+
+    <!-- Boton para cerrar sesion -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

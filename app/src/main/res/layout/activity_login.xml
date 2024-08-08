@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:layout_centerVertical="true"
+    tools:context=".ui.activity.LoginActivity">
+
+    <!-- Contenedor para centrar verticalmente los elementos del login manual -->
+    <LinearLayout
+        android:id="@+id/linearlayout_manual_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Etiqueta de titulo: Login manual -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_login_manual"
+            android:textSize="24dp"
+            android:textAlignment="center"/>
+
+        <!-- Campo de texto para el valor username -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/username_hardcoded_value" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de texto para la contraseña -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_edit_text"
+                android:text="@string/password_hardcoded_value"
+                android:padding="16dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Boton para iniciar sesion manual -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_label_btn" />
+
+    </LinearLayout>
+
+    <!-- Contenedor para centrar verticalmente los elementos del login por Firebase -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:layout_below="@+id/linearlayout_manual_login"
+        android:gravity="center_horizontal">
+
+        <!-- Texto de titulo: Login con Firebase -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_firebase_login"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+        <!-- Campo de texto para el valor correo electronico -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_firebase_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/mail_label_firebase_login_inputtext">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firebase_email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/hardcoded_firebase_mail" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de texto para la contraseña de la cuenta firebase -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_firebase_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Firebase password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firebase_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firebase_email_edit_text"
+                android:text="@string/hardcoded_firebase_password"
+                android:padding="16dp"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Boton para iniciar sesion con Firebase -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firebase_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/firebase_login_label_btn" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_indicator_firebase_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorSize="48dp"
+            app:trackThickness="4dp"
+            app:indicatorColor="@color/colorPrimary"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

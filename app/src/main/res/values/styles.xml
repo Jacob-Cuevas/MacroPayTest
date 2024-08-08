@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para darle forma al shape de la imagen mostrada en la pagina catalog-->
+    <style name="CircularShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <!-- Estilo usado por el ListView que muestra el listado de Movie -->
+    <style name="ListViewStyle" parent="Widget.AppCompat.ListView">
+        <item name="android:divider">?attr/colorControlHighlight</item>
+        <item name="android:dividerHeight">8dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

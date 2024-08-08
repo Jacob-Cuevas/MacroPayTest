@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PruebaMacropay</string>
+    <string name="mensaje_bienvenida">Bienvenido a CineCine!</string>
+    <string name="go_back_btn_label">Volver</string>
+    <string name="logout">Salir</string>
+    <string name="username_hardcoded_value">user</string>
+    <string name="password_hardcoded_value">password</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login_label_btn">Iniciar</string>
+    <string name="wrong_credentials">Credenciales incorrectas</string>
+    <string name="release_date_label">Estreno: %1$s</string>
+    <string name="solo_adultos_classification_label">Solo Adultos</string>
+    <string name="todo_publico_classification_label">Apta todo publico</string>
+    <string name="classificacion_label">Clasificacion: %1$s</string>
+    <string name="mail_label_firebase_login_inputtext">Correo electronico Firebase</string>
+    <string name="hardcoded_firebase_mail">macropaytest@gmail.com</string>
+    <string name="hardcoded_firebase_password">123456</string>
+    <string name="label_firebase_login">Login con Firebase</string>
+    <string name="label_login_manual">Login Manual</string>
+    <string name="firebase_login_error_message">Error en el inicio de sesión. Verifica tus credenciales.</string>
+    <string name="firebase_login_label_btn">Iniciar con Firebase</string>
+</resources>
