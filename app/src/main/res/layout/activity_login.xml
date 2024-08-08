@@ -129,6 +129,7 @@
             android:layout_height="wrap_content"
             android:text="@string/firebase_login_label_btn" />
 
+        <!-- Circle Progressbar mostrado cuando se presione el boton de Login Firebase -->
         <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progress_indicator_firebase_login"
             android:layout_width="wrap_content"
