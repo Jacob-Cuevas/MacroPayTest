@@ -1,5 +1,16 @@
-Este proyecto fue creado como parte de un examen practico para la postulacion a la vacante de Programador Movil Android
+Este proyecto fue creado como parte de un examen practico para una postulacion a la vacante de Programador Movil Android
 de la empresa MacroPay.
+
+Tecnologias usadas:
+- Kotlin
+- AndroidX
+- Material Design
+- OkHttp
+- Glide
+- GSON
+- Firebase login.
+- Patron MVVM.
+- Coroutines.
 
 Creador:
 Jacob Manuel Cuevas Bacab
